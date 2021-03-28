@@ -38,14 +38,10 @@ class TGBotController extends Controller
                 $bot->onMessage(function (Nutgram $bot) {
                     $bot->sendMessage('You sent a message!');
                 });
-                // $updates = $bot->getUpdates();
-                $message = $bot->sendMessage('Hi!'.$bot->getMe(), ['chat_id' => 1289432718]);
+                 
+                $message = $bot->sendMessage('Hi!', ['chat_id' => 1289432718]);
 
-                // dd( $bot);
-
-
-       
-            // ...
+               
             $bot->setRunningMode(Webhook::class);
 
             $bot->run();
