@@ -72,11 +72,11 @@ class TGBotController extends Controller
 
              $bot->sendPhoto($localFile,['chat_id' => 1289432718]);
 
-                // $file = $bot->getFile("AgACAgIAAxkBAAIB7mBghOqzzOh5KF2S8uaZvGXsbddFAAKUtjEbyVsAAUvxYxs_tp5G1XB1z6IuAAMBAAMCAANtAANWZgACHgQ");
+                $file = $bot->getFile("AgACAgIAAxkBAAIB7mBghOqzzOh5KF2S8uaZvGXsbddFAAKUtjEbyVsAAUvxYxs_tp5G1XB1z6IuAAMBAAMCAANtAANWZgACHgQ");
 
                 // $down=$bot->downloadFile($file, public_path());
 
-                // $bot->sendMessage(json_encode($down));
+                $bot->sendMessage(json_encode($file));
 
             $bot->run();
 
