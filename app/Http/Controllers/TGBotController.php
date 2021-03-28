@@ -59,7 +59,7 @@ class TGBotController extends Controller
                 $message = $bot->sendMessage('Hi', ['chat_id' => 1289432718]);
                 });
 
-                $message = $bot->sendMessage('*Hi*', [
+                $message = $bot->sendMessage('*Hi markdown *', [
                     'chat_id' => 1289432718,
                     'parse_mode' => ParseMode::MARKDOWN,
                 ]);
@@ -67,7 +67,7 @@ class TGBotController extends Controller
                 $bot->onMessage(function (Nutgram $bot) {
                 $bot->sendMessage(json_encode($bot->message()));
             });
-             $bot->sendPhoto("AgACAgIAAxkBAAIB7mBghOqzzOh5KF2S8uaZvGXsbddFAAKUtjEbyVsAAUvxYxs_tp5G1XB1z6IuAAMBAAMCAANtAANWZgACHgQ");
+             $bot->sendPhoto("AgACAgIAAxkBAAIB7mBghOqzzOh5KF2S8uaZvGXsbddFAAKUtjEbyVsAAUvxYxs_tp5G1XB1z6IuAAMBAAMCAANtAANWZgACHgQ",['chat_id' => 1289432718]);
 
 
             $bot->run();
