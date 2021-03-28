@@ -19,7 +19,7 @@ class TGBotController extends Controller
 
         $bot = new Nutgram($_ENV['TOKEN']); // new instance
             $bot->setRunningMode(Webhook::class);
-                $bot->onMessage(function (Nutgram $bot) {
+                 
                 $bot->onMessage(function (Nutgram $bot) {
                     $bot->sendMessage('You sent a message!');
                 });
