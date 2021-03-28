@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use SergiX44\Nutgram\Nutgram;
 use SergiX44\Nutgram\RunningMode\Polling;
+use SergiX44\Nutgram\RunningMode\Webhook;
 
 class TGBotController extends Controller
 {
@@ -17,7 +18,7 @@ class TGBotController extends Controller
         //this is ntgram  
 
         $bot = new Nutgram($_ENV['TOKEN']); // new instance
-            $bot->setRunningMode(Polling::class);
+            $bot->setRunningMode(Webhook::class);
                  $bot->onMessage('you send a message');
         $bot->onText('My name is {name}', function (Nutgram $bot, $name) {
             $bot->sendMessage("Hi {$name}");
