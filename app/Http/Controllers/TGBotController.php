@@ -20,8 +20,10 @@ class TGBotController extends Controller
     {
         // $telegram = new Api(env('TELEGRAM_TOKEN'));
         $updates = Telegram::getWebhookUpdates();
-        dd($updates);
-
+        $response = Telegram::sendMessage([
+        'chat_id' => '1289432718', 
+        'text' => 'Hello World'
+        ]);
     
 
 // dd($updates,$botId,$firstName,$username);
