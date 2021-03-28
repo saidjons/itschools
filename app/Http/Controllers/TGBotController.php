@@ -37,7 +37,7 @@ class TGBotController extends Controller
 
         $response = Telegram::sendMessage([
         'chat_id' => $updates->message->from->id, 
-        'text' =>$photos.' count '.$photos_count,
+        'text' =>json_encode($response).' count '.$photos_count,
         ]); 
 
 
