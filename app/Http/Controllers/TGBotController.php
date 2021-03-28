@@ -18,7 +18,8 @@ class TGBotController extends Controller
 
     public function hello()
     {
-     
+        $telegram = new Api(env('TELEGRAM_TOKEN'));
+
          
             $keyboard = [
                 ['7', '8', '9'],
@@ -27,13 +28,13 @@ class TGBotController extends Controller
                     ['0']
             ];
 
-            $reply_markup = Telegram::replyKeyboardMarkup([
+            $reply_markup = $telegram->replyKeyboardMarkup([
                 'keyboard' => $keyboard, 
                 'resize_keyboard' => true, 
                 'one_time_keyboard' => true
             ]);
 
-            $response = Telegram::sendMessage([
+            $response = $telegram->sendMessage([
                 'chat_id' => '1289432718', 
                 'text' => 'Hello World', 
                 'reply_markup' => $reply_markup
