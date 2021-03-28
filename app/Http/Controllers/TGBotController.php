@@ -23,7 +23,7 @@ class TGBotController extends Controller
 
         $response = Telegram::sendMessage([
         'chat_id' => '1289432718', 
-        'text' => json_encode($updates),
+        'text' => "<pre>".json_encode($updates)."<pre>",
         ]);
     
 
