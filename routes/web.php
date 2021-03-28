@@ -48,7 +48,7 @@ Route::get('/about', function () {
 });
 
 
-Route::get('/tg/bot/9393939302-1lwlw0',[TGBotController::class,'hello']);
+Route::post('/9393939302-1lwlw0/tg',[TGBotController::class,'hello']);
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {

@@ -18,29 +18,11 @@ class TGBotController extends Controller
 
     public function hello()
     {
-        $telegram = new Api(env('TELEGRAM_TOKEN'));
+        // $telegram = new Api(env('TELEGRAM_TOKEN'));
+        $updates = Telegram::getWebhookUpdates();
+        dd($updates);
 
-         
-            $keyboard = [
-                ['7', '8', '9'],
-                ['4', '5', '6'],
-                ['1', '2', '3'],
-                    ['0']
-            ];
-                
-                $reply_markup = $telegram->replyKeyboardMarkup([
-                    'keyboard' => $keyboard, 
-                    'resize_keyboard' => true, 
-                    'one_time_keyboard' => true
-                ]);
-
-                $response = $telegram->sendMessage([
-                    'chat_id' => '1289432718', 
-                    'text' => 'Hello World', 
-                    'reply_markup' => $reply_markup
-                ]);
-
-                $messageId = $response->getMessageId();
+    
 
 // dd($updates,$botId,$firstName,$username);
 
