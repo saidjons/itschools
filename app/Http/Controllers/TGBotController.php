@@ -16,35 +16,35 @@ class TGBotController extends Controller
     {
      
 
-        $telegram= new Api(env('TELEGRAM_TOKEN'));
-$response = $telegram->getMe();
+//         $telegram= new Api(env('TELEGRAM_TOKEN'));
+// $response = $telegram->getMe();
 
-$botId = $response->getId();
-$firstName = $response->getFirstName();
-$username = $response->getUsername();
-$updates = $telegram->getWebhookUpdate();
-
-
-dd($updates,$botId,$firstName,$username);
+// $botId = $response->getId();
+// $firstName = $response->getFirstName();
+// $username = $response->getUsername();
+// $updates = $telegram->getWebhookUpdate();
 
 
+// dd($updates,$botId,$firstName,$username);
 
 
 
-        //this is ntgram  
 
-        // $bot = new Nutgram($_ENV['TELEGRAM_TOKEN']); // new instance
-        //     $bot->setRunningMode(Webhook::class);
+
+        // this is ntgram  
+
+        $bot = new Nutgram($_ENV['TELEGRAM_TOKEN']); // new instance
+            $bot->setRunningMode(Webhook::class);
                  
-        //         $bot->onMessage(function (Nutgram $bot) {
-        //             $bot->sendMessage('You sent a message!');
-        //         });
+                $bot->onMessage(function (Nutgram $bot) {
+                    $bot->sendMessage('You sent a message!');
+                });
 
 
        
-        //     // ...
+            // ...
 
-        //     $bot->run();
+            $bot->run();
 
 
 
