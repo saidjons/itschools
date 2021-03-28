@@ -68,17 +68,16 @@ class TGBotController extends Controller
             //     $bot->onMessage(function (Nutgram $bot) {
             //     $bot->sendMessage(json_encode($bot->message()));
             // });
-        $path = Storage::path('/img/logo.png');
+             $path = Storage::path('/img/logo.png');
 
-            $localFile=fopen($path,'r');
+            // $localFile=fopen($path,'r');
 
-             $bot->sendPhoto($localFile,['chat_id' => 1289432718]);
+            //  $bot->sendPhoto($localFile,['chat_id' => 1289432718]);
 
-                $file = $bot->getFile("AgACAgIAAxkBAAIB7mBghOqzzOh5KF2S8uaZvGXsbddFAAKUtjEbyVsAAUvxYxs_tp5G1XB1z6IuAAMBAAMCAANtAANWZgACHgQ");
+                // $file = $bot->getFile("AgACAgIAAxkBAAIB7mBghOqzzOh5KF2S8uaZvGXsbddFAAKUtjEbyVsAAUvxYxs_tp5G1XB1z6IuAAMBAAMCAANtAANWZgACHgQ");
 
-                // $down=$bot->downloadFile($file, public_path());
+                
 
-                $bot->sendMessage(json_encode($file));
 
             $bot->run();
 
