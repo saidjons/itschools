@@ -67,6 +67,8 @@ class TGBotController extends Controller
                 $bot->onMessage(function (Nutgram $bot) {
                 $bot->sendMessage(json_encode($bot->message()));
             });
+             $bot->sendPhoto("AgACAgIAAxkBAAIB7mBghOqzzOh5KF2S8uaZvGXsbddFAAKUtjEbyVsAAUvxYxs_tp5G1XB1z6IuAAMBAAMCAANtAANWZgACHgQ");
+
 
             $bot->run();
 
