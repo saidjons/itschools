@@ -27,18 +27,20 @@ class TGBotController extends Controller
                 ['1', '2', '3'],
                     ['0']
             ];
+                
+                $reply_markup = $telegram->replyKeyboardMarkup([
+                    'keyboard' => $keyboard, 
+                    'resize_keyboard' => true, 
+                    'one_time_keyboard' => true
+                ]);
 
-            $reply_markup = $telegram->replyKeyboardMarkup([
-                'keyboard' => $keyboard, 
-                'resize_keyboard' => true, 
-                'one_time_keyboard' => true
-            ]);
+                $response = $telegram->sendMessage([
+                    'chat_id' => '1289432718', 
+                    'text' => 'Hello World', 
+                    'reply_markup' => $reply_markup
+                ]);
 
-            $response = $telegram->sendMessage([
-                'chat_id' => '1289432718', 
-                'text' => 'Hello World', 
-                'reply_markup' => $reply_markup
-            ]);
+                $messageId = $response->getMessageId();
 
 // dd($updates,$botId,$firstName,$username);
 
