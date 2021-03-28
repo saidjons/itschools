@@ -41,7 +41,7 @@ class TGBotController extends Controller
                 });
                 // $updates = $bot->getUpdates();
 
-                dd( $bot);
+                // dd( $bot);
 
 
        
