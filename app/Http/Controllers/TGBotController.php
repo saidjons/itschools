@@ -17,6 +17,7 @@ class TGBotController extends Controller
     public function hello()
     {
      
+        return true;
 
 //         $telegram= new Api(env('TELEGRAM_TOKEN'));
 // $response = $telegram->getMe();
