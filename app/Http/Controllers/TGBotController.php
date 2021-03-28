@@ -13,6 +13,12 @@ class TGBotController extends Controller
     {
      
 
+        //this is ntgram  
+
+        
+
+
+
         $bot = new Nutgram('979455977:AAELJHZe1UcWNrcuOYMK73yKSZkaBVCuC5c');
         
         // ex. called when a message contains "My name is Mario"
