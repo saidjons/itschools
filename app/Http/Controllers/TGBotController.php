@@ -39,9 +39,9 @@ class TGBotController extends Controller
                 $bot->onMessage(function (Nutgram $bot) {
                     $bot->sendMessage('You sent a message!');
                 });
-                $updates = $bot->getUpdates();
+                // $updates = $bot->getUpdates();
 
-                dd($updates,$bot);
+                dd( $bot);
 
 
        
