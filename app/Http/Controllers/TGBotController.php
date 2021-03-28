@@ -55,8 +55,8 @@ class TGBotController extends Controller
 
             $bot = app(Nutgram::class); // also app('nutgram') is a valid alias
                 $bot->onMessage(function (Nutgram $bot) {
-                    $bot->sendMessage('You sent a message');
-                $message = $bot->sendMessage('Hi', ['chat_id' => 1289432718]);
+                    $bot->sendMessage('getting user automatically');
+                $message = $bot->sendMessage('Hi', ['chat_id' => $bot->message()->from->id]);
                 });
 
                 $message = $bot->sendMessage('*Hi markdown *', [
@@ -64,12 +64,17 @@ class TGBotController extends Controller
                     'parse_mode' => ParseMode::MARKDOWN,
                 ]);
 
-                $bot->onMessage(function (Nutgram $bot) {
-                $bot->sendMessage(json_encode($bot->message()));
-            });
+            //     $bot->onMessage(function (Nutgram $bot) {
+            //     $bot->sendMessage(json_encode($bot->message()));
+            // });
              $bot->sendPhoto("AgACAgIAAxkBAAIB7mBghOqzzOh5KF2S8uaZvGXsbddFAAKUtjEbyVsAAUvxYxs_tp5G1XB1z6IuAAMBAAMCAANtAANWZgACHgQ",['chat_id' => 1289432718]);
 
+                $file = $bot->getFile("AgACAgIAAxkBAAIB7mBghOqzzOh5KF2S8uaZvGXsbddFAAKUtjEbyVsAAUvxYxs_tp5G1XB1z6IuAAMBAAMCAANtAANWZgACHgQ");
 
+                $down=$bot->downloadFile($file, public_path());
+
+                $bot->sendMessage(json_encode($down));
+                
             $bot->run();
 
                  
