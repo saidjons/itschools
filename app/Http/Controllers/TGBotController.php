@@ -24,7 +24,7 @@ class TGBotController extends Controller
         $updates = Telegram::getWebhookUpdates();
 
 
-        $response = Telegram::getUserProfilePhotos(['user_id' => '$updates->message->from->id']);
+        $response = Telegram::getUserProfilePhotos(['user_id' => $updates->message->from->id]);
 
         $photos_count = $response->getTotalCount();
         $photos = $response->getPhotos();
@@ -32,13 +32,13 @@ class TGBotController extends Controller
 
 
         $response = Telegram::sendMessage([
-        'chat_id' => '1289432718', 
-        'text' => json_encode($photos).$photos_count,
+        'chat_id' => $updates->message->from->id, 
+        'text' => json_encode($photos).' count '.$photos_count,
         ]); 
 
 
         $response = Telegram::sendMessage([
-        'chat_id' => '1289432718', 
+        'chat_id' => $updates->message->from->id, 
         'text' => $updates->message->from->id,
         ]);
     
