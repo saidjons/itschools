@@ -1,0 +1,6 @@
+models:
+
+  TGRequest:
+    request: json
+    
+
