@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use Telegram\Bot\Api;
 use Illuminate\Http\Request;
 use SergiX44\Nutgram\Nutgram;
+use function GuzzleHttp\json_decode;
+use Illuminate\Support\Facades\Storage;
 use SergiX44\Nutgram\RunningMode\Polling;
 use SergiX44\Nutgram\RunningMode\Webhook;
+
 use Telegram\Bot\Laravel\Facades\Telegram;
 use SergiX44\Nutgram\Telegram\Attributes\ParseMode;
-
-use function GuzzleHttp\json_decode;
 
 class TGBotController extends Controller
 {
@@ -55,11 +56,11 @@ class TGBotController extends Controller
 
             $bot = app(Nutgram::class); // also app('nutgram') is a valid alias
                 $bot->onMessage(function (Nutgram $bot) {
-                    $bot->sendMessage('getting user automatically');
+                    
                 $message = $bot->sendMessage('Hi', ['chat_id' => $bot->message()->user->id]);
                 });
 
-                $message = $bot->sendMessage(json_decode($bot->message()), [
+                $message = $bot->sendMessage(json_encode($bot->message()), [
                     'chat_id' => 1289432718,
                     'parse_mode' => ParseMode::MARKDOWN,
                 ]);
@@ -67,8 +68,9 @@ class TGBotController extends Controller
             //     $bot->onMessage(function (Nutgram $bot) {
             //     $bot->sendMessage(json_encode($bot->message()));
             // });
+        $path = Storage::path('/img/logo.png');
 
-            $localFile=fopen(public_path('/img/logo.png'),'r');
+            $localFile=fopen($path,'r');
 
              $bot->sendPhoto($localFile,['chat_id' => 1289432718]);
 
