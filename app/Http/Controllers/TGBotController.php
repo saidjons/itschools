@@ -12,6 +12,7 @@ use SergiX44\Nutgram\RunningMode\Webhook;
 
 use Telegram\Bot\Laravel\Facades\Telegram;
 use SergiX44\Nutgram\Telegram\Attributes\ParseMode;
+use SergiX44\Nutgram\Telegram\Attributes\MessageTypes;
 
 class TGBotController extends Controller
 {
@@ -68,7 +69,29 @@ class TGBotController extends Controller
             //     $bot->onMessage(function (Nutgram $bot) {
             //     $bot->sendMessage(json_encode($bot->message()));
             // });
-             $path = Storage::path('/img/logo.png');
+            //      $path = Storage::path('/img/logo.png');
+            // Called only when you send a photo
+            $bot->onMessageType(MessageTypes::PHOTO, function (Nutgram $bot) {
+                $photos = $bot->message()->photo;
+                $bot->sendMessage('Nice pic!');
+            });
+
+             $bot->onMessageType(MessageTypes::VOICE, function (Nutgram $bot) {
+                $photos = $bot->message()->photo;
+                $bot->sendMessage('Nice VOICE!');
+            });
+
+             $bot->onMessageType(MessageTypes::VIDEO, function (Nutgram $bot) {
+                $photos = $bot->message()->photo;
+                $bot->sendMessage('Nice VIDEO!');
+            });
+
+             $bot->onMessageType(MessageTypes::TEXT, function (Nutgram $bot) {
+                $photos = $bot->message()->photo;
+                $bot->sendMessage('Nice text!');
+            });
+
+
 
             // $localFile=fopen($path,'r');
 
