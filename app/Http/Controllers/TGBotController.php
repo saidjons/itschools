@@ -39,6 +39,7 @@ class TGBotController extends Controller
                 $bot->onMessage(function (Nutgram $bot) {
                     $bot->sendMessage('You sent a message!');
                 });
+                dd($bot->userId(),$bot);
 
 
        
