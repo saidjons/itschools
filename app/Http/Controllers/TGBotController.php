@@ -76,7 +76,7 @@ class TGBotController extends Controller
 
                 // $down=$bot->downloadFile($file, public_path());
 
-                $bot->sendMessage(json_encode($down));
+                // $bot->sendMessage(json_encode($down));
 
             $bot->run();
 
