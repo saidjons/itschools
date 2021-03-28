@@ -21,30 +21,30 @@ class TGBotController extends Controller
     public function hello()
     {
         // $telegram = new Api(env('TELEGRAM_TOKEN'));
-        $updates = Telegram::getWebhookUpdates();
+        // $updates = Telegram::getWebhookUpdates();
 
-        Telegram::sendChatAction([
-            'chat_id' => $updates->message->from->id, 
-            'action' => 'upload_photo'
-            ]);
+        // Telegram::sendChatAction([
+        //     'chat_id' => $updates->message->from->id, 
+        //     'action' => 'upload_photo'
+        //     ]);
 
-        $response = Telegram::getUserProfilePhotos(['user_id' => '1289432718']);
+        // $response = Telegram::getUserProfilePhotos(['user_id' => '1289432718']);
 
-        $photos_count = $response->getTotalCount();
-        $photos = $response->getPhotos();
+        // $photos_count = $response->getTotalCount();
+        // $photos = $response->getPhotos();
       
 
 
-        $response = Telegram::sendMessage([
-        'chat_id' => $updates->message->from->id, 
-        'text' =>json_encode($response).' count '.$photos_count,
-        ]); 
+        // $response = Telegram::sendMessage([
+        // 'chat_id' => $updates->message->from->id, 
+        // 'text' =>json_encode($response).' count '.$photos_count,
+        // ]); 
 
 
-        $response = Telegram::sendMessage([
-        'chat_id' => $updates->message->from->id, 
-        'text' => $updates->message->from->id,
-        ]);
+        // $response = Telegram::sendMessage([
+        // 'chat_id' => $updates->message->from->id, 
+        // 'text' => $updates->message->from->id,
+        // ]);
     
 
 // dd($updates,$botId,$firstName,$username);
@@ -53,16 +53,22 @@ class TGBotController extends Controller
 
 
 
-            // $bot = app(Nutgram::class); // also app('nutgram') is a valid alias
-                // $bot->onMessage(function (Nutgram $bot) {
-                //     $bot->sendMessage('You sent a message!');
-                // $message = $bot->sendMessage('Hi!', ['chat_id' => 1289432718]);
-                // });
+            $bot = app(Nutgram::class); // also app('nutgram') is a valid alias
+                $bot->onMessage(function (Nutgram $bot) {
+                    $bot->sendMessage('You sent a message!');
+                $message = $bot->sendMessage('Hi!', ['chat_id' => 1289432718]);
+                });
 
-                // $message = $bot->sendMessage('*Hi!*', [
-                //     'chat_id' => 1289432718,
-                //     'parse_mode' => ParseMode::MARKDOWN,
-                // ]);
+                $message = $bot->sendMessage('*Hi!*', [
+                    'chat_id' => 1289432718,
+                    'parse_mode' => ParseMode::MARKDOWN,
+                ]);
+
+                $bot->onMessage(function (Nutgram $bot) {
+                $bot->sendMessage('You sent a message!');
+            });
+
+            $bot->run();
 
                  
 
