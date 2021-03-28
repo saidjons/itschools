@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use SergiX44\Nutgram\Nutgram;
 use SergiX44\Nutgram\RunningMode\Polling;
 use SergiX44\Nutgram\RunningMode\Webhook;
+use SergiX44\Nutgram\Telegram\Attributes\ParseMode;
 
 class TGBotController extends Controller
 {
@@ -54,6 +55,12 @@ class TGBotController extends Controller
                     $bot->sendMessage('You sent a message!');
                 $message = $bot->sendMessage('Hi!', ['chat_id' => 1289432718]);
                 });
+
+                $message = $bot->sendMessage('*Hi!*', [
+                    'chat_id' => 1289432718,
+                    'parse_mode' => ParseMode::MARKDOWN,
+                ]);
+
                  
 
 
