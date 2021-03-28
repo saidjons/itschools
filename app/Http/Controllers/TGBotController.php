@@ -47,11 +47,11 @@ class TGBotController extends Controller
         //     $bot->run();
 
                 $bot = app(Nutgram::class); // also app('nutgram') is a valid alias
-                     $bot->onMessage(function (Nutgram $bot) {
+                $bot->onMessage(function (Nutgram $bot) {
                     $bot->sendMessage('You sent a message!');
+                $message = $bot->sendMessage('Hi!', ['chat_id' => 1289432718]);
                 });
                  
-                $message = $bot->sendMessage('Hi!', ['chat_id' => 1289432718]);
 
 
          
