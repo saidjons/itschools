@@ -13,9 +13,11 @@ class TGBotController extends Controller
     {
      
 
-        $bot = new Nutgram($_ENV['979455977:AAELJHZe1UcWNrcuOYMK73yKSZkaBVCuC5c']);
+        $bot = new Nutgram('979455977:AAELJHZe1UcWNrcuOYMK73yKSZkaBVCuC5c');
         
         // ex. called when a message contains "My name is Mario"
+        
+        $bot->onMessage('you send a message');
         $bot->onText('My name is {name}', function (Nutgram $bot, $name) {
             $bot->sendMessage("Hi {$name}");
         });
