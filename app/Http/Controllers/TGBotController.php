@@ -10,6 +10,8 @@ use SergiX44\Nutgram\RunningMode\Webhook;
 
 class TGBotController extends Controller
 {
+
+    // https://api.telegram.org/bot979455977:AAELJHZe1UcWNrcuOYMK73yKSZkaBVCuC5c/setWebhook?url=https://itschools.uz/tg/bot/9393939302-1lwlw0
     //
 
     public function hello()
