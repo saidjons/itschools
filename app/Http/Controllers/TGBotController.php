@@ -26,7 +26,7 @@ class TGBotController extends Controller
 
         $response = Telegram::sendMessage([
         'chat_id' => '1289432718', 
-        'text' => $updates->message->from->id." object" ?? $updates['message']['from']['id']." array",
+        'text' => $updates->message->from->id." object" ?? $updates->from->id ,
         ]);
     
 
