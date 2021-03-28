@@ -22,7 +22,10 @@ $response = $telegram->getMe();
 $botId = $response->getId();
 $firstName = $response->getFirstName();
 $username = $response->getUsername();
-dd($botId,$firstName,$username);
+$updates = $telegram->getWebhookUpdate();
+
+
+dd($updates,$botId,$firstName,$username);
 
 
 
