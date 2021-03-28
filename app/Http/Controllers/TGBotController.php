@@ -10,6 +10,8 @@ use SergiX44\Nutgram\RunningMode\Webhook;
 use Telegram\Bot\Laravel\Facades\Telegram;
 use SergiX44\Nutgram\Telegram\Attributes\ParseMode;
 
+use function GuzzleHttp\json_decode;
+
 class TGBotController extends Controller
 {
 
@@ -20,10 +22,11 @@ class TGBotController extends Controller
     {
         // $telegram = new Api(env('TELEGRAM_TOKEN'));
         $updates = Telegram::getWebhookUpdates();
+        $updates=json_decode($updates);
 
         $response = Telegram::sendMessage([
         'chat_id' => '1289432718', 
-        'text' => $updates->messege->from->id ?? $updates->from->id,
+        'text' => $updates->messege->from->id." object" ?? $updates['message']['from']['id']." array",
         ]);
     
 
