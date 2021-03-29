@@ -62,7 +62,7 @@ class TGBotController extends Controller
                 // });
 
                 $message = $bot->sendMessage(json_encode($bot->message()), [
-                    'chat_id' => 1289432718,
+                    'chat_id' => $bot->userId(),
                     'parse_mode' => ParseMode::MARKDOWN,
                 ]);
 
@@ -78,7 +78,7 @@ class TGBotController extends Controller
 
              $bot->onMessageType(MessageTypes::VOICE, function (Nutgram $bot) {
                 $photos = $bot->message()->photo;
-                $bot->sendMessage('Nice VOICE!');
+                $bot->sendMessage('Nice VOICE!'."message Id:".$bot->messageId()." chat id:".$bot->chatId());
             });
 
              $bot->onMessageType(MessageTypes::VIDEO, function (Nutgram $bot) {
