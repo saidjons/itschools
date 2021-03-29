@@ -61,10 +61,10 @@ class TGBotController extends Controller
                 // $message = $bot->sendMessage('Hi', ['chat_id' => $bot->message()->user->id]);
                 // });
 
-                $message = $bot->sendMessage(json_encode($bot->message()), [
-                    'chat_id' => $bot->chatId(),
-                    'parse_mode' => ParseMode::MARKDOWN,
-                ]);
+                // $message = $bot->sendMessage(json_encode($bot->message()), [
+                //     'chat_id' => $bot->chatId(),
+                //     'parse_mode' => ParseMode::MARKDOWN,
+                // ]);
 
             //     $bot->onMessage(function (Nutgram $bot) {
             //     $bot->sendMessage(json_encode($bot->message()));
