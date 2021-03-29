@@ -76,10 +76,10 @@ class TGBotController extends Controller
                 $bot->sendMessage('Nice pic!');
             });
 
-             $bot->onMessageType(MessageTypes::VOICE, function (Nutgram $bot) {
-                $photos = $bot->message()->photo;
-                $bot->sendMessage('Nice VOICE!'."message Id:".$bot->messageId()." chat id:".$bot->chatId())."user id :".$bot->userId();
-            });
+            //  $bot->onMessageType(MessageTypes::VOICE, function (Nutgram $bot) {
+            //     $photos = $bot->message()->photo;
+            //     $bot->sendMessage('Nice VOICE!'."message Id:".$bot->messageId()." chat id:".$bot->chatId())."user id :".$bot->userId();
+            // });
 
              $bot->onMessageType(MessageTypes::VIDEO, function (Nutgram $bot) {
                 $photos = $bot->message()->photo;
