@@ -4,7 +4,7 @@
 {{-- https://play.tailwindcss.com/kkH5oIlsn8 --}}
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer=""></script>
 <div>
-  <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-gray-300">
+  <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-light-blue-400">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex items-center">
@@ -54,7 +54,7 @@
         </div>
       </div>
     </div>
-    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+    <div class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
       <div class="px-2 pt-2 pb-3 sm:px-3">
         <a href="#" class="block px-3 py-2 rounded-md text-base font-medium text-white bg-indigo-800 focus:outline-none focus:text-white focus:bg-gray-700">Dashboard</a>
         <a href="#" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-indigo-200 hover:text-white hover:bg-indigo-600 focus:outline-none focus:text-white focus:bg-indigo-600">Team</a>
