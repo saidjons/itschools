@@ -77,7 +77,7 @@
                            <img width='39px' height='42px' class="faq-card__icon" 
                             src="/img/landing/js.png" alt=""> 
                             {{-- <img width="39px" height="42px" class="faq-card__icon ls-is-cached lazyloaded" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__liquidity__icon.svg" data-src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__liquidity__icon.svg" alt=""> --}}
-                          <span class="faq-card__head">  To'siqlardan qutiling</span>
+                          <span class="faq-card__head"> Javascript</span>
                       </div>
                       <div class="d-flex flex-column position-relative">
                           <hr class="faq-card__hr">
@@ -85,9 +85,12 @@
                       </div>
                       <div class="faq-card__content">
                           <span class="faq-card__desc">
-                        
-                                Hayotingizda burilish yasang. Buning uchun sizga to'gri tanlovni o'zi kifoya.
-                        
+                                
+                            JavaScript web dasturlash tilinging eng asosiy qurolidan biri bo'lib, 99%  hozirgi kundagi mavjud
+                            websitelarda 
+                            shu tildan foydalanilgan. Javascript dasturchilari 
+                            ko'p talab qilinadigan dasturchilardan biri hisoblaniladi.
+
                         </span>
                       </div>
                       <div class="faq-card__url">
@@ -101,7 +104,7 @@
                             src="img/landing/php.png" alt=""> 
                             
                             {{-- <img width="39px" height="42px" class="faq-card__icon lazyloaded" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__legal__icon.svg" data-src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__legal__icon.svg" alt=""> --}}
-                          <span class="faq-card__head"> Yanada arzonroq</span>
+                          <span class="faq-card__head"> PHP</span>
                       </div>
                       <div class="d-flex flex-column position-relative">
                           <hr class="faq-card__hr">
@@ -109,7 +112,10 @@
                       </div>
                       <div class="faq-card__content">
                           <span class="faq-card__desc">
-                               Do'stlaringizni taklif qiling , chegirmaga ega bo'ling           
+                              PHP - bu server bilan ishlaydigan biri bo'lib, katta websitelarni mashtablashtirish qobiliyatiga egadir.
+                              W3Techs ma'lumotlariga ko'ra, PHP server bilan ishlaydigan  barcha veb-saytlarning 
+                              78,9% tomonidan qo'llaniladi.
+                               Shunday qilib, Internetga kirgan har 10 veb-saytning deyarli 8 tasi qandaydir tarzda PHP-dan foydalanmoqda.           
                             
                             </span>
                       </div>
@@ -120,7 +126,7 @@
                       <div class="faq-card__title d-flex align-items-center">
                               <img width='39px' height='42px' class="faq-card__icon" 
                               src="/img/landing/mysql.png" alt="">
-                          <span class="faq-card__head"> Do'stlar o'rttiring</span>
+                          <span class="faq-card__head"> MYSQL</span>
                       </div>
                       <div class="d-flex flex-column position-relative">
                           <hr class="faq-card__hr">
@@ -128,11 +134,14 @@
                       </div>
                       <div class="faq-card__content">
                           <span class="faq-card__desc">
-                                    Yordam kerakmi, shunchaki  so'rang.                
+                              MYSQL -bu ma'lumotlarni saqlovchi dasturiy ta'minot bo'lib, u bepulligi va ajoyib funksiyalari bilan
+                              ajralib turadi.
+                           MYSQL ko'plab shaxsiy va biznes loyihalar uchun ishlatiladi. Avzalligi -uning sodda va ishonchliligidadir.
+                                   
                                </span>
                       </div>
                       <div class="faq-card__url">
-                                                    
+                      
   
                                                   </div>
                   </div>
@@ -140,7 +149,7 @@
                       <div class="faq-card__title d-flex align-items-center">
                               <img width='39px' height='42px' class="faq-card__icon" 
                               src="/img/landing/vue.webp" alt="">
-                          <span class="faq-card__head">   Миграция статуса</span>
+                          <span class="faq-card__head">   Vue.js</span>
                       </div>
                       <div class="d-flex flex-column position-relative">
                           <hr class="faq-card__hr">
@@ -148,8 +157,12 @@
                       </div>
                       <div class="faq-card__content">
                           <span class="faq-card__desc">
-                                У вас есть VIP cтатус на другой платформе? Не беда! Мы предложим вам свои уникальные условия для удобного перехода на Binaryx                        </span>
+                              Vue.js Javascript frameworklaridan biridir. U web dasturchilarga javascript bilan ishlashni osonlashtiradi.
+
+                                
+                                </span>
                       </div>
+
                       <div class="faq-card__url">
                                               </div>
                   </div>
@@ -157,7 +170,7 @@
                       <div class="faq-card__title d-flex align-items-center">
                               <img width='39px' height='42px' class="faq-card__icon" 
                             src="/img/landing/lara.png" alt="">
-                          <span class="faq-card__head"> Ishonch </span>
+                          <span class="faq-card__head"> Laravel </span>
                       </div>
                       <div class="d-flex flex-column position-relative">
                           <hr class="faq-card__hr">
@@ -165,9 +178,10 @@
                       </div>
                       <div class="faq-card__content">
                           <span class="faq-card__desc">
-                             Foydalanuvchilarimizning ishonchi biz uchun qadrli. Feedback kutib qolamiz  
-                        
                             
+                            Laravel - bu veb-ilovalarni yaratish uchun eng mashhur PHP frameworklaridan biridir.  Laravel web dasturchilarga 
+                            o'z veb-saytlarini tez va qiyinchiliklarsiz qurishga imkon beradi. 
+                            Bundan tashqari, bu juda ravon, foydalanuvchilar uchun qulay va o'rganish va tushunish osonligi bilan ajralib turadi.
                                                                                        
                                 </span>
                       </div>
@@ -180,7 +194,7 @@
                       <div class="faq-card__title d-flex align-items-center">
                               <img width='39px' height='42px' class="faq-card__icon" 
                               src="/img/landing/search.png" alt="">
-                          <span class="faq-card__head">   Дорожная карта</span>
+                          <span class="faq-card__head"> Search engine</span>
                       </div>
                       <div class="d-flex flex-column position-relative">
                           <hr class="faq-card__hr">
@@ -188,11 +202,14 @@
                       </div>
                       <div class="faq-card__content">
                           <span class="faq-card__desc">
-                                Хотите знать, как обстоят дела с разработкой продукта? В разделе роадмап вы можете узнать о грядущих фичах и планах                        </span>
+                        
+                            Search engine bazadagi ma'lumotlarni qidirib topishda qo'llaniladigan texnologiyalardan biridir.
+                            Bu qismda millionlab ma'lumotlarni milisekund ichida topishni o'rganasiz.
+                        
+                        </span>
                       </div>
                       <div class="faq-card__url">
-                                                      <a href="https://www.binaryx.com/ru/roadmap">
-                                  Узнать больше</a>
+                                                      
   
                                                   </div>
                   </div>
@@ -202,7 +219,7 @@
   <!-- end savollar -->
   
   <!-- start admin feature -->
-  <div class="row mt50">
+  {{-- <div class="row mt50">
     <div class="col-xs-12">
         <div id="advantage" class="image" style="background-image: url(img/update/index/adv_bg_globe.png), url(img/update/index/adv_bg_gray_curve.png)">
             <div class="container">
@@ -249,7 +266,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
   <!-- end admin feature -->
   
   <!-- start blue feature -->
@@ -260,13 +277,13 @@
                 <ul class="block-grid flex-grid block-grid-md-3 block-grid-sm-3 block-grid-xs-2 mt50">
                     <li class="title-block">
                         <h2 class="mt0"><a class="a0 c1 fs30r mb25" href="#">
-                            <strong class="flex">Dasturchi Bo'ling</strong></a></h2>
+                            <strong class="flex">Zamonaviy Dasturchi Bo'ling</strong></a></h2>
                         
                     </li>
                     <li class="item">
                         <div href="#" class="item-inner t0 dib">
                             <h4 class="title mt0 mb20 c3" style="display: flex;flex-direction: row;"><a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width='25' height='20' class="h-6 w-6 mr10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" width='25' height='20' class="h-6 w-6 mr10" fill="none" viewBox="0 0 24 24" stroke="black">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                   </svg>
                                 
@@ -280,20 +297,24 @@
                     <li class="item">
                         <div class="item-inner t0 dib">
                             <h4 class="title mt0 mb20 c3"><a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width='25' height='20' class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" width='25' height='20' class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="black">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                                   </svg>
-                                Online bo'ling    
+                                Qulay    
                             </a></h4>
                             <a href="#" class="c5 a2 fs13">
-                                Bir oy davomida hoh telefonda, hoh komputerda kurslarni tomosha qiling.
+                                 Hoh telefonda, hoh komputerda kurslarni tomosha qiling. Hech qanaqa 
+                                 <svg xmlns="http://www.w3.org/2000/svg" widht='20' class="h-6 w-6 inline-flex" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                  </svg>
+                                 disk yo'q.
                             </a>
                         </div>
                     </li>
                     <li class="item">
                         <div class="item-inner t0 dib">
                             <h4 class="title mt0 mb20 c3"><a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width='20' height='20' class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" width='20' height='20' class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="red">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                   </svg>
                                
@@ -307,10 +328,12 @@
                     <li class="item">
                         <div class="item-inner t0 dib">
                             <h4 class="title mt0 mb20 c3"><a href="#">
-                                <i class="sprite cmn-personal-blue mr10 fs">
-                                </i>Temani o'zgartiring</a></h4>
+                                <svg xmlns="http://www.w3.org/2000/svg"  width='23' height='20' class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="green">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                  </svg>
+                                </i>Ishonchli</a></h4>
                             <a href="#" class="c5 a2 fs13">
-                               Dark mode temasi sizning ko'zlaringizni charchatmaydi.
+                               Biz sizga kursni sotib qolmoqchi emasmiz.  Hammasi online .  Hech qanaqa risk yo'q.
                                 
                                 </a>
                         </div>
@@ -318,14 +341,17 @@
                     <li class="item">
                         <div class="item-inner t0 dib">
                             <h4 class="title mt0 mb20 c3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width='25'  height='20' class="h-6 w-6 mr10 fs" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                   </svg>
-                               Safimizga qo'shiling </h4>
+                              Do'stona 
+                            
+                            </h4>
                             <a href="#" class="c5 a2 fs13">
 
-                                Hoziroq ro'yxatdan o'ting 
-
+                               Hoxlagan payti to'lashni to'xtating va hoxlagan payti davom ettiring. Bu shunday oson.&#128519;
+                                Biz sizdan hech qanday sabab so'ramaymiz.
                             
                             </a>
                         </div>
