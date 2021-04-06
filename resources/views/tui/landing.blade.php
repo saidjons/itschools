@@ -52,8 +52,8 @@
                       </div>
                   </div>
               </div>
-              <div class="col-xl-7 col-lg-6">
-                  <img src="/img/landing/atr.jpg">
+              <div class="col-xl-7 col-lg-6 mt-10">
+                  <img src="/img/landing/atr2.png">
               </div>
           </div>
       </div>
