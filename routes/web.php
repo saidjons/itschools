@@ -12,7 +12,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/register',LeadGeneratorForm::class);
+Route::get('/register',LeadGeneratorForm::class)->middleware('throttle:5,5');
 
 // Route::get('/courses', function () {
 //     return view('tui.course-list');
