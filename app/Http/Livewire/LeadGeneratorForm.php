@@ -10,8 +10,7 @@ class LeadGeneratorForm extends Component
 {
     public $count=0;
     public $fname,$lname,$email,$phone,$age;
-
-
+   
 
     protected $rules = [
         'fname' => 'required|min:4',
@@ -54,6 +53,6 @@ class LeadGeneratorForm extends Component
     public function render()
     {
         return view('livewire.lead-generator-form')
-        ->layout('layouts.livewire');
+        ->layout('layouts.livewire',['title'=>"Ro'yhatdan o'ting"]);
     }
 }

@@ -1,4 +1,4 @@
-@extends('layouts.tail')
+@extends('layouts.tail',['title'=>'Tez Kunda'])
 
 {{-- https://play.tailwindcss.com/vGWFE7mTsv?layout=horizontal --}}
 
