@@ -1,7 +1,8 @@
 created:
-    - database/factories/TGRequestFactory.php
-    - database/migrations/2021_03_19_150404_create_t_g_requests_table.php
-    - app/TGRequest.php
+    - database/factories/Models/ContactFactory.php
+    - database/migrations/2021_04_06_092557_create_contacts_table.php
+    - app/Models/Contact.php
 models:
     Models\User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, two_factor_secret: 'text nullable', two_factor_recovery_codes: 'text nullable', remember_token: 'string:100 nullable', current_team_id: 'biginteger unsigned nullable', profile_photo_path: 'text nullable' }
     TGRequest: { request: json }
+    /Models/Contact: { email: 'string unique', age: number, phone: 'string unique', fname: string, lname: string }

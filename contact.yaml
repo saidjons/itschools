@@ -1,0 +1,7 @@
+models:
+  /Models/Contact:
+    email:  string unique
+    age:  number
+    phone:  string unique
+    fname: string
+    lname:  string

@@ -12,7 +12,7 @@
 <div class="min-h-screen bg-light">
    {{-- @include('tui.partials.nav') --}}
   
-    <div class="py-10">
+    <div class="mb-10">
       <!-- <header>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 class="text-3xl font-bold leading-tight text-gray-900">
@@ -32,26 +32,20 @@
                   <div class="desktop-center-area">
                       <div class="section-title style-two text-lg-left text-center">
                           <h2 class="title"> Programmalash<br>tirishni <br> o'rganing noldan boshlab</h2>
-                          <p>
-                              
-                            Our support team will get assistance from AI-powered suggestions, 
-                              making it quicker assistance than ever to handle support requests. 
-                              Our support team will get
-                            
-                            </p>
+                           
                       </div>
                       <div class="row">
                           <div class="col-lg-9">
                               <div class="riyaqas-check-list media">
-                                  <img class="media-left" src="https://www.poms.work/assets/img/business-tool/pencil.svg" alt="check">
+                                  <img class="media-left" src="/img/landing/pencil.svg" alt="check">
                                   <span>Video kursga qo'shimcha ravishda scriptni yozma tarzda ham oling</span>
                               </div>
                               <div class="riyaqas-check-list media">
-                                  <img class="media-left" src="https://www.poms.work/assets/img/business-tool/search.svg" alt="check">
+                                  <img class="media-left" src="/img/landing/search.svg" alt="check">
                                   <span>Tushunmagapsizmi , bizning Q&A sistamamiz barcha savollaringizga javob topadi</span>
                               </div>
                               <div class="riyaqas-check-list media mg-bottom-0-991">
-                                  <img class="media-left" src="https://www.poms.work/assets/img/business-tool/settings.svg" alt="check">
+                                  <img class="media-left" src="/img/landing/settings.svg" alt="check">
                                   <span>Kurslarni o'z bo'sh vaqtingizda o'rganing</span>
                               </div>
                           </div>
@@ -59,7 +53,7 @@
                   </div>
               </div>
               <div class="col-xl-7 col-lg-6">
-                  <img src="https://www.poms.work/assets/img/5.jpg">
+                  <img src="/img/landing/atr.jpg">
               </div>
           </div>
       </div>
@@ -80,7 +74,9 @@
       <div class="row">
                                               <div class="col-12 col-md-6 col-lg-4 faq-card">
                       <div class="faq-card__title d-flex align-items-center">
-                          <noscript><img width='39px' height='42px' class="faq-card__icon" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__liquidity__icon.svg" alt=""></noscript><img width="39px" height="42px" class="faq-card__icon ls-is-cached lazyloaded" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__liquidity__icon.svg" data-src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__liquidity__icon.svg" alt="">
+                           <img width='39px' height='42px' class="faq-card__icon" 
+                            src="/img/landing/js.png" alt=""> 
+                            {{-- <img width="39px" height="42px" class="faq-card__icon ls-is-cached lazyloaded" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__liquidity__icon.svg" data-src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__liquidity__icon.svg" alt=""> --}}
                           <span class="faq-card__head">  To'siqlardan qutiling</span>
                       </div>
                       <div class="d-flex flex-column position-relative">
@@ -100,7 +96,11 @@
                   </div>
                                   <div class="col-12 col-md-6 col-lg-4 faq-card">
                       <div class="faq-card__title d-flex align-items-center">
-                          <noscript><img width='39px' height='42px' class="faq-card__icon" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__legal__icon.svg" alt=""></noscript><img width="39px" height="42px" class="faq-card__icon lazyloaded" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__legal__icon.svg" data-src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__legal__icon.svg" alt="">
+                           
+                              <img width='39px' height='42px' class="faq-card__icon" 
+                            src="img/landing/php.png" alt=""> 
+                            
+                            {{-- <img width="39px" height="42px" class="faq-card__icon lazyloaded" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__legal__icon.svg" data-src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__legal__icon.svg" alt=""> --}}
                           <span class="faq-card__head"> Yanada arzonroq</span>
                       </div>
                       <div class="d-flex flex-column position-relative">
@@ -118,7 +118,8 @@
                   </div>
                                   <div class="col-12 col-md-6 col-lg-4 faq-card">
                       <div class="faq-card__title d-flex align-items-center">
-                          <noscript><img width='39px' height='42px' class="faq-card__icon" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__team__icon.svg" alt=""></noscript><img width="39px" height="42px" class="faq-card__icon lazyloaded" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__team__icon.svg" data-src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__team__icon.svg" alt="">
+                              <img width='39px' height='42px' class="faq-card__icon" 
+                              src="/img/landing/mysql.png" alt="">
                           <span class="faq-card__head"> Do'stlar o'rttiring</span>
                       </div>
                       <div class="d-flex flex-column position-relative">
@@ -137,7 +138,8 @@
                   </div>
                                   <div class="col-12 col-md-6 col-lg-4 faq-card">
                       <div class="faq-card__title d-flex align-items-center">
-                          <noscript><img width='39px' height='42px' class="faq-card__icon" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__status__icon.svg" alt=""></noscript><img width="39px" height="42px" class="faq-card__icon lazyloaded" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__status__icon.svg" data-src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__status__icon.svg" alt="">
+                              <img width='39px' height='42px' class="faq-card__icon" 
+                              src="/img/landing/vue.webp" alt="">
                           <span class="faq-card__head">   Миграция статуса</span>
                       </div>
                       <div class="d-flex flex-column position-relative">
@@ -153,10 +155,8 @@
                   </div>
                                   <div class="col-12 col-md-6 col-lg-4 faq-card">
                       <div class="faq-card__title d-flex align-items-center">
-                          <noscript><img width='39px' height='42px' class="faq-card__icon" 
-                            src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__security__icon.svg" alt="">
-                        </noscript><img width="39px" height="42px" class="faq-card__icon lazyloaded" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__security__icon.svg" 
-                        data-src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__security__icon.svg" alt="">
+                              <img width='39px' height='42px' class="faq-card__icon" 
+                            src="/img/landing/lara.png" alt="">
                           <span class="faq-card__head"> Ishonch </span>
                       </div>
                       <div class="d-flex flex-column position-relative">
@@ -178,7 +178,8 @@
                   </div>
                                   <div class="col-12 col-md-6 col-lg-4 faq-card">
                       <div class="faq-card__title d-flex align-items-center">
-                          <noscript><img width='39px' height='42px' class="faq-card__icon" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__roadmap__icon.svg" alt=""></noscript><img width="39px" height="42px" class="faq-card__icon lazyloaded" src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__roadmap__icon.svg" data-src="https://dspfdd2n9fb8f.cloudfront.net/wp-content/uploads/2020/05/question__roadmap__icon.svg" alt="">
+                              <img width='39px' height='42px' class="faq-card__icon" 
+                              src="/img/landing/search.png" alt="">
                           <span class="faq-card__head">   Дорожная карта</span>
                       </div>
                       <div class="d-flex flex-column position-relative">
@@ -213,9 +214,10 @@
                         </div>
                         <div class="two-text-blocks-block pt40 d-flex">
                             <div class="one-text-block mr20">
-                                <i class="icon-w-shadow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="23px">
-<image x="0px" y="0px" width="32px" height="23px" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAMAAABd273TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABvFBMVEUMgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq4Mgq7///879e2EAAAAknRSTlMAXNvi4OHe3FP25uXj7v3k91RK9f5nCQ0HrXV2rPRC8G8z+N0OMkM46QKqbG2o6jmEFBU3NCd8X2B7KC7UbnBxgft9+t+ytDDLiWl0i+xz7YjMMRu+H8U1Hr2/HKY6YqkBq6cPlEvzLC2W+YWGXn5r/CEQEVaCn2WeV0XnjD7GBQbHPUfa0TYkypqbGLcXo6SOgy2xsHgAAAABYktHRJPhA9+2AAAAB3RJTUUH5AQXDg0s9KcFdgAAAbZJREFUKM99kfs7G0EUho9YiZUgYsMSYSVBKaGNoi5ZFbSsW1uV3uhWVNsogrq3aDWoe76/2Ez28bh7f5h3z/PNPDvnDJFBiilVSDNbzGnJRUg1pdAV0kVkWG2ZyMrOzkKmzZoBe87l3JErOfPy5QIUyrILRXJ+nlNyOy7y4hIoTKUer4/IZ/aUsUJBSfl5XvEALqbKKjzkZTVqKplc8NcaeakNdcl9HtMj7scWT4C7DrZ67icWqSG5sQqNxokm1CT9VPI2E7W0QmgLqqrS/szewayqwQ57qF1hbutEawt14V666fkL2Ht6NS3Yh35tQGMMFA6iR9W03iERL18RvR7G8Bv+y5FQ2LhDIDTC9fYd3n/gH76PMI8yj+GTzmv9M5qYar0Yjxgn5An4v7D2hMmvvPw2KbB2HX58l88npTcg2sgbn+LVDz6W6Shm9EuPMRtDkOZE6zzRglWcI0WKzV59zp9uLNISlomcWKFFuFfpGmvr+PVb3Njc+iP+7cP6Nt0g/A8FcYQDiBfBtEO3sLuHEP7vI4q9XbqVg0MgFgMOj+gOIsd8/CcRuhP9FDjV6R70ROJafgZbb3k/W83C7gAAAABJRU5ErkJggg=="></image>
-</svg></i>
+                                <i class="icon-w-shadow">
+                                    <img src="/img/landing/help.png" width="32px" height="23px"  alt="">
+ 
+</i>
                                 <h3 class="mt30 fw600">Cutting-Edge Technologies</h3>
                                 <p>Web hosting environments are constantly evolving. DirectAdmin stays in-step with today’s most sophisticated solutions. </p>
                                 
@@ -263,8 +265,12 @@
                     </li>
                     <li class="item">
                         <div href="#" class="item-inner t0 dib">
-                            <h4 class="title mt0 mb20 c3"><a href="#"><i class="sprite cmn-calculator-blue mr10">
-                                </i>Narx arzonligi</a></h4>
+                            <h4 class="title mt0 mb20 c3" style="display: flex;flex-direction: row;"><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width='25' height='20' class="h-6 w-6 mr10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                  </svg>
+                                
+                                Narx arzonligi</a></h4>
                             <a href="#" class="c5 a2 fs13">
                                Oyiga Atiga 100 000 so'm evaziga sistemamizdagi barcha kurslarni ko'rishga muvaffaq bo'ling.
                             
@@ -273,7 +279,10 @@
                     </li>
                     <li class="item">
                         <div class="item-inner t0 dib">
-                            <h4 class="title mt0 mb20 c3"><a href="#"><i class="sprite cmn-requirements-blue mr10"></i>
+                            <h4 class="title mt0 mb20 c3"><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width='25' height='20' class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                  </svg>
                                 Online bo'ling    
                             </a></h4>
                             <a href="#" class="c5 a2 fs13">
@@ -283,7 +292,10 @@
                     </li>
                     <li class="item">
                         <div class="item-inner t0 dib">
-                            <h4 class="title mt0 mb20 c3"><a href="#"><i class="sprite cmn-contact mr10"></i>
+                            <h4 class="title mt0 mb20 c3"><a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width='20' height='20' class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
                                
                                 Yordam kerakmi
                             </a></h4>
@@ -294,7 +306,8 @@
                     </li>
                     <li class="item">
                         <div class="item-inner t0 dib">
-                            <h4 class="title mt0 mb20 c3"><a href="#"><i class="sprite cmn-personal-blue mr10 fs">
+                            <h4 class="title mt0 mb20 c3"><a href="#">
+                                <i class="sprite cmn-personal-blue mr10 fs">
                                 </i>Temani o'zgartiring</a></h4>
                             <a href="#" class="c5 a2 fs13">
                                Dark mode temasi sizning ko'zlaringizni charchatmaydi.
@@ -304,8 +317,11 @@
                     </li>
                     <li class="item">
                         <div class="item-inner t0 dib">
-                            <h4 class="title mt0 mb20 c3"><a href="#"><i class="sprite cmn-play-circle-blue mr10"></i>
-                               Safimizga qo'shiling</a></h4>
+                            <h4 class="title mt0 mb20 c3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width='25'  height='20' class="h-6 w-6 mr10 fs" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>
+                               Safimizga qo'shiling </h4>
                             <a href="#" class="c5 a2 fs13">
 
                                 Hoziroq ro'yxatdan o'ting 

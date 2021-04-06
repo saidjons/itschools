@@ -488,7 +488,13 @@ ul{margin-top:0;margin-bottom:9px;}
 .fs45r{font-size:45px;font-size:4.5rem;}
 .t0,a{transition:all 0.3s ease;}
 .a0{transition:all 0.1s ease;}
-.cmn-calculator-blue,.cmn-contact,.cmn-personal-blue,.cmn-play-circle-blue,.cmn-requirements-blue{background-image:url('https://www.directadmin.com/img/cmn-s2c5b2bff4e.png');background-repeat:no-repeat;}
+.cmn-calculator-blue
+{
+  
+  background-image:url('/img/landing/help.png');
+  /* background-repeat:no-repeat;  */
+  
+  }
 .cmn-calculator-blue{background-position:0 -233px;}
 .cmn-contact{background-position:0 -380px;}
 .cmn-personal-blue{background-position:0 -584px;}
