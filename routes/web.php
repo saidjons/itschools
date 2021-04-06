@@ -14,46 +14,46 @@ Route::get('/', function () {
 
 Route::get('/register',LeadGeneratorForm::class);
 
-Route::get('/courses', function () {
-    return view('tui.course-list');
-});
+// Route::get('/courses', function () {
+//     return view('tui.course-list');
+// });
 
-Route::get('/courses/show', function () {
-    return view('tui.video-show');
-});
-
-
+// Route::get('/courses/show', function () {
+//     return view('tui.video-show');
+// });
 
 
-// udema template
-Route::get('/contact', function () {
-    return view('udema.contact');
-});
-
-Route::get('/faq', function () {
-    return view('udema.faq');
-});
-
-Route::get('/pricing', function () {
-    return view('udema.pricing');
-});
-
-Route::get('/help', function () {
-    return view('udema.help');
-});
 
 
-Route::get('/about', function () {
-    return view('udema.about');
-});
+// // udema template
+// Route::get('/contact', function () {
+//     return view('udema.contact');
+// });
+
+// Route::get('/faq', function () {
+//     return view('udema.faq');
+// });
+
+// Route::get('/pricing', function () {
+//     return view('udema.pricing');
+// });
+
+// Route::get('/help', function () {
+//     return view('udema.help');
+// });
 
 
-Route::post('/9393939302-1lwlw0/tg',[TGBotController::class,'hello']);
+// Route::get('/about', function () {
+//     return view('udema.about');
+// });
 
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::post('/9393939302-1lwlw0/tg',[TGBotController::class,'hello']);
 
-// here starts 
+
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
+
+// // here starts 
 
