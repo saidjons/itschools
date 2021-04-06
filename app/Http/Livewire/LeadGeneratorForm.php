@@ -40,7 +40,7 @@ class LeadGeneratorForm extends Component
                 $bot = app(Nutgram::class); // also app('nutgram') is a valid alias
                 // $bot->onMessage(function (Nutgram $bot) {
                     
-                $message = $bot->sendMessage('user created :'.$this->fname.$this->age.$this->phone, ['chat_id' =>'1289432718']);
+                $message = $bot->sendMessage('user created : username: '.$this->fname." , yoshi: ".$this->age." , tel: ".$this->phone, ['chat_id' =>'1289432718']);
             }else{
                 session()->flash('message', "Email yoki telefon bazada ro'yhatdan o'tgan.");
 
